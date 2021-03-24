@@ -4,7 +4,6 @@ from time import sleep
 og = "[+] Loading..."
 animation = og
 
-i = 0
 z = 0
 
 while True:
@@ -38,5 +37,4 @@ while True:
               animation = animation + "-"
               z = z + 1
 
-      i = i + 1
       sleep (0.1)
