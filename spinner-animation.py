@@ -1,19 +1,20 @@
 import os
 from time import sleep
 
-og = "[+] Loading..."
-animation = og
+def loader(phrase):
 
-z = 0
+ og = phrase
+ animation = og
 
-while True:
+ z = 0
+
+ while True:
 
       os.system("clear")
       print (animation)
 
-      if (z > 3):
-
-            z = 0
+      if (z == 5):
+         return None
 
       animation = og
 
@@ -37,4 +38,12 @@ while True:
               animation = animation + "-"
               z = z + 1
 
+      elif z == 4:
+
+              animation = og 
+              z = z + 1
+
       sleep (0.1)
+
+for x in range(6):
+    loader("[+] Loading...")
